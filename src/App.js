@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 const App = () => {
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(0)
     
     let text;
 
@@ -36,7 +36,7 @@ const App = () => {
       <Container>
         <h2 className = "display-4 fw-bold"
         style = {{letterSpacing: "0.3rem"}}>Employee List</h2>
-        < h3 > (Employess {page} to {page+4}) </h3> 
+        < h3 > (Employess {page+1} to {page+5}) </h3> 
       </Container >
 
 
