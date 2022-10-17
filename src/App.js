@@ -17,13 +17,13 @@ const App = () => {
       if(text=="Next"){
         if (page < data.length - 5){
           return setPage(page+5)
-        }else if(page==16){
+        }else if(page==15){
           return setPage(page-15)
         }
       }else if(text=="Prev"){
         if (page > 1){
           return setPage(page - 5)
-        }else if(page==1){
+        }else if(page==0){
           return setPage(page+15)
         }
         
